@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Arad-VF";
+    src: url("AradVF.woff2");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("Arad-Regular.woff2");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("Arad-Bold.woff2");
+    font-weight: 700;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Ario";
+    src: url("ArioVF.woff2");
+    font-weight: 700;
+    font-display: fallback;
+}
+
+
+pre{
+     font-family: monospace !important;
+}
+
+@supports (font-variation-settings: normal) {
+    body, .button, .back-button {
+    font-family: "Arad-VF", "Arad", sans-serif;
+    }
+}
+
+
+h1, h2, h3, h4{
+    font-variation-settings: "DSTY" 2;
+}
