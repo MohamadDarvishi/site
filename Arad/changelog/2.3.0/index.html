@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <title>تغییرات نسخۀ ۲.۳.۰ | فونت آراد</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../icon.svg" type="image/png"/>
+    <meta name="description" content="تغییرات نسخۀ ۲.۳.۰ فونت آراد را در صفحۀ رسمی فونت ببینید." />
+    <meta name="robots" content="index, follow"/>
+    <meta name="language" content="Farsi"/>
+    <meta name="revisit-after" content="7 day"/>
+    <link rel="alternate" hreflang="en-us" href="https://mdarvishi5124.github.io/Arad/docs">
+    <link type="text/css" rel="stylesheet" href="../../css/default-style.css">
+    <link type="text/css" rel="stylesheet" href="../css/chagnelog-style.css">
+    <link type="text/css" rel="stylesheet" href="../../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+<h6 style="font-size: 14pt; margin: 5px;"><a style="color:black;" href="../index.html">فهرست تغییرات</a> >نسخۀ ۲.۳.۰</h6>
+
+<body>
+
+    <div>
+        <img class="img_post" src="img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۳.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۴ بهمن ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+  </div>
+      <p>سبت به نسخهٔ بتا، چند تا باگ کوچک رفع شده. چون تو این مدت،خیلی صحبتی در مورد نسخه بتای فونت نشد، و همون صحبت ها هم، صحبت های مثبتی بودن؛ تمام تغییرات بتا، اعمال شدن.
+</p>
+
+
+    <p>برای دانلود این نسخه، به <a href="https://github.com/MohamadDarvishi/Arad/releases/tag/2.3.0">این پیوند</a> مراجعه کنید.</p>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <title>تغییرات نسخۀ ۲.۰.۱ | فونت آریو</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../icon.svg" type="image/png"/>
+    <meta name="description" content="تغییرات نسخۀ ۲.۰.۱ فونت آریو را در صفحۀ رسمی فونت ببینید." />
+    <meta name="robots" content="index, follow"/>
+    <meta name="language" content="Farsi"/>
+    <meta name="revisit-after" content="7 day"/>
+    <link type="text/css" rel="stylesheet" href="../../css/default-style.css">
+    <link type="text/css" rel="stylesheet" href="../css/chagnelog-style.css">
+    <link type="text/css" rel="stylesheet" href="../../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+<h6 style="font-size: 14pt; margin: 5px;"><a style="color:black;" href="../index.html">فهرست تغییرات</a> >نسخۀ ۲.۰.۱</h6>
+
+<body>
+
+    <div>
+        <img class="img_post" src="img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۰.۱ نسخۀ دوم آریو منتشر شد!</h2></div>
+        <div><p class="p_post">25 مرداد ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+  </div>
+      <p>در نسخه دوم فونت آریو (استعداد مَد)، شاهد بازسازی کامل بسیاری از قسمت های فونت، و بازبینی باقی قسمت ها هستیم. اسم فونت به آریو تغییر یافت. حجم کار های انجام شده بسیار زیاد است، و بسیاری از این کار ها، مستند نشدند. به همین دلیل به اشاره به سر فصل ها کفایت می‌کنیم.</p>
+
+  <li>طراحی تمام حروف و گلیف ها بازبینی شد</li>
+      <img class="img_post_in" src="img/1.png">
+      <img class="img_post_in" src="img/2.png">
+      <img class="img_post_in" src="img/3.png">
+      <img class="img_post_in" src="img/4.png">
+  <li>با توجه به اینکه پایه فونت جدید، از آراد برداشته شده است، شاهد بهبود در تمام بخش های فنی فونت هستیم
+    <ul>
+      <li>اضافه شدن و تکمیل گلیف ها و اضافه شدن چند زبان جدید شامل اردو و کوردی</li>
+      <li>جایگزین های شرطی</li>
+      <li>جایگزین های اجباری</li>
+      <li>جایگزین های اختیاری</li>
+      <li>ویژگی های مختلف</li>
+    </ul>
+  </li>
+  <li>بازسازی و بازبینی تمام کرنینگ ها</li>
+  <li>بازسازی تمام اِعراب‌گذاری ها</li>
+  <li>کوچک شدن اندازه فونت (بهبود)</li>
+  <li>بازبینی متریک ها</li>
+  <li>طبیعتاً رفع باگ های مختلف</li>
+
+    <p style="margin: -12px 0px 15px 0px;">و تغییرات دیگری، که در اینجا اشاره نشدند.</p>
+
+
+    <p>برای دانلود این نسخه، به <a href="https://github.com/MohamadDarvishi/Ario/releases/tag/2.0.1">این پیوند</a> مراجعه کنید.</p>
+</body>
+
+</html>

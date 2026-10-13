@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <title>بروزرسانی ها | فونت آراد</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.svg" type="image/png"/>
+    <meta name="description" content="می‌توانید از این صفحه، به فهرست تغییرات فونت آراد دسترسی داشته باشید." />
+    <meta name="robots" content="index, follow"/>
+    <meta name="language" content="Farsi"/>
+    <meta name="revisit-after" content="7 day"/>
+    <link rel="alternate" hreflang="en-us" href="https://mohamaddarvishi.ir/Arad/changelog">
+    <link type="text/css" rel="stylesheet" href="../css/default-style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+<script>
+  // هنگام بارگیری صفحه
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fade');
+  });
+});
+
+// هنگام بسته شدن صفحه (مثلاً با کلیک بر روی یک دکمه)
+document.getElementById('closeButton').addEventListener('click', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fadeOut'); // کلاس fadeOut را برای افکت محو ایجاد کنید
+  });
+  // بعد از افکت محو، صفحه را ببندید
+  setTimeout(function() {
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  }, 1000); // بعد از 1 ثانیه
+});
+// هنگام بارگیری صفحه
+$(document).ready(function() {
+  $('*').hide().fadeIn(1000); // تمام عناصر را پنهان کنید و سپس با افکت محو نمایش دهید
+});
+
+// هنگام بسته شدن صفحه
+$('#closeButton').click(function() {
+  $('*').fadeOut(1000, function() {
+    // بعد از افکت محو، صفحه را ببندید
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  });
+});
+
+
+</script>
+
+
+<body>
+
+  <div>
+    <a href="2.0.1/index.html">
+        <img class="img_post" src="2.0.1/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۰.۱ نسخۀ دوم آریو منتشر شد!</h2></div>
+        <div><p class="p_post">۲۵ مرداد ۱۴۰۵ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.0/index.html">
+        <img class="img_post" src="2.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی کامل نسخۀ دوم آریو منتشر شد!</h2></div>
+        <div><p class="p_post">۱۴ خرداد ۱۴۰۵ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+
+  <div>
+    <a href="1.1/index.html">
+        <img class="img_post" src="1.1/img/index.png">
+        <div><h2 class="h2_post">نسخه ۱.۱ آریو منتشر شد!</h2></div>
+        <div><p class="p_post">۶ مهر ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+  
+
+  <div>
+    <a href="1.0/index.html">
+        <img class="img_post" src="1.0/img/index.png">
+        <div><h2 class="h2_post">نسخه ۱.۰ آریو منتشر شد!</h2></div>
+        <div><p class="p_post">۹ تیر ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>  
+
+</body>
+
+
+</html>

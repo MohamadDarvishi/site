@@ -1,0 +1,191 @@
+
+html{
+	height: fit-content;
+	background: rgb(224,245,240);
+	background: linear-gradient(30deg, rgba(224,245,240,1) 0%, rgba(255,255,255,1) 100%); 
+}
+
+body, .tl-dl, .button {
+	display: flex;
+	gap: 0.1rem;
+}
+
+body {
+	flex-direction: column;
+	font-family: "Arad", sans-serif;
+	color: black;
+	margin: 15px 25% 5px 25%;
+}
+
+.tl-dl {
+	flex-wrap: wrap;
+	margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+::selection {
+	background-color: #00cc99;
+	color: #f0f8ff;
+}
+
+svg {
+	margin-bottom: 1px;
+	height: 1.7rem;
+	fill: black;
+}
+
+.svg-download{
+	fill: rgb(255, 255, 255);
+}
+
+
+p {
+	margin: 1rem auto;
+	padding: 0 1rem;
+	font-size: 14pt;
+	line-height: 1.6;
+}
+
+.button, .button-menu {
+	font-family: "Arad", sans-serif;
+	font-weight: 500;
+	margin: .8rem;
+	position: relative;
+	gap: .5rem;
+	padding: 14px 26px 14px 26px;
+	color: black;
+	box-sizing: border-box;
+	text-decoration: none;
+	border-radius: 14px;
+	font-size: 14pt;
+	border: 0px solid black;
+	background-color: rgb(254, 254, 254);
+	transition: font-weight 0.5s;
+}
+
+.button:hover, .button:focus, .button-menu:hover, .button-menu:focus {
+	background-color: rgb(252, 252, 252);
+	transition-property: all;
+	transition-duration: .1s;
+	transition-timing-function: ease;
+	font-weight: 700;
+	font-variation-settings: 'DSTY' 2;
+}
+
+.button-download:hover, .button-download:focus {
+	background-color: #00bb8c;
+	color: rgb(255, 255, 255);
+}
+
+.button-download {
+	background-color: #00cc99;
+	color: #fff;
+	font-size: 15pt;
+	cursor: pointer;
+}
+
+.do {
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: safe center;
+	align-items: safe center;
+}
+
+
+.version-info {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 12pt;
+}
+
+.donate {
+	font-weight: 800;
+	font-size: 14pt;
+	font-style: normal;
+	color: black;
+	text-decoration: none;
+}
+
+li {
+	margin: 8px;
+	font-size: 13pt;
+}
+
+@supports (font-variation-settings: normal) {
+    body, .button {
+    font-family: "Arad-VF", "Arad", sans-serif;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+	html, .button {
+		filter: invert() hue-rotate(180deg);
+	}
+
+	.button:hover, .button:focus {
+		filter: brightness(1.2) invert() hue-rotate(180deg);
+	}
+
+}
+
+@media all and (max-width: 1300px) {
+
+	html{
+		height: fit-content;
+		background: rgb(224,245,240);
+		background: linear-gradient(30deg, rgba(224,245,240,1) 0%, rgba(255,255,255,1) 100%); 
+	}
+
+	body {
+	flex-direction: column;
+	font-family: "Arad", sans-serif;
+	color: black;
+	margin: 5px 10% 5px 10%;
+}
+}
+
+@media all and (max-width: 420px) {
+
+	html{
+		height: fit-content;
+		background: rgb(224,245,240);
+		background: linear-gradient(30deg, rgba(224,245,240,1) 0%, rgba(255,255,255,1) 100%); 
+	}
+	
+	body, .tl-dl, .button {
+		gap: 0rem;
+	}
+
+	.tl-dl {
+		margin: 10px 0px 0px 0px;
+	}
+
+	.title {
+		font-size: 36pt;
+		line-height: 1;
+		margin-bottom: 5px;
+	}
+
+	.button, .button-menu{
+		margin: .4rem;
+		font-size: 13pt;
+	}
+
+	svg{
+		height: 1.4rem;
+	}
+
+	body {
+	flex-direction: column;
+	font-family: "Arad", sans-serif;
+	color: black;
+	margin: 5px 5% 5px 5%;
+}
+}

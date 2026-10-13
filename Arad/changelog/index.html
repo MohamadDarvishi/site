@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <title>بروزرسانی ها | فونت آراد</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.svg" type="image/png"/>
+    <meta name="description" content="می‌توانید از این صفحه، به فهرست تغییرات فونت آراد دسترسی داشته باشید." />
+    <meta name="robots" content="index, follow"/>
+    <meta name="language" content="Farsi"/>
+    <meta name="revisit-after" content="7 day"/>
+    <link rel="alternate" hreflang="en-us" href="https://mohamaddarvishi.ir/Arad/changelog">
+    <link type="text/css" rel="stylesheet" href="../css/default-style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+<script>
+  // هنگام بارگیری صفحه
+document.addEventListener('DOMContentLoaded', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fade');
+  });
+});
+
+// هنگام بسته شدن صفحه (مثلاً با کلیک بر روی یک دکمه)
+document.getElementById('closeButton').addEventListener('click', function() {
+  const elements = document.querySelectorAll('*'); // انتخاب تمام عناصر
+  elements.forEach(element => {
+    element.classList.add('fadeOut'); // کلاس fadeOut را برای افکت محو ایجاد کنید
+  });
+  // بعد از افکت محو، صفحه را ببندید
+  setTimeout(function() {
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  }, 1000); // بعد از 1 ثانیه
+});
+// هنگام بارگیری صفحه
+$(document).ready(function() {
+  $('*').hide().fadeIn(1000); // تمام عناصر را پنهان کنید و سپس با افکت محو نمایش دهید
+});
+
+// هنگام بسته شدن صفحه
+$('#closeButton').click(function() {
+  $('*').fadeOut(1000, function() {
+    // بعد از افکت محو، صفحه را ببندید
+    window.close(); // یا هر عمل دیگری برای بسته شدن صفحه
+  });
+});
+
+
+</script>
+
+
+<body>
+
+  <div>
+    <a href="2.5.0/index.html">
+        <img class="img_post" src="2.5.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۵.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۱ مرداد ۱۴۰۵ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.4.0/index.html">
+        <img class="img_post" src="2.4.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۴.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۹ اردیبهشت ۱۴۰۵ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.3.0/index.html">
+        <img class="img_post" src="2.3.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۳.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۵ بهمن ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.3.0_beta/index.html">
+        <img class="img_post" src="2.3.0_beta/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی بتای ۲.۳.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۸ دی ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+  
+  <div>
+    <a href="2.2.0/index.html">
+        <img class="img_post" src="2.2.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۲.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۲۰ آذر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.1.0/index.html">
+        <img class="img_post" src="2.1.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی ۲.۱.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۷ آذر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.0.0/index.html">
+        <img class="img_post" src="2.0.0/img/index.png">
+        <div><h2 class="h2_post">بروزرسانی کامل نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱ آذر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+  <div>
+    <a href="2.0.0-beta5/index.html">
+        <img class="img_post" src="2.0.0-beta5/img/index.png">
+        
+        <div><h2 class="h2_post">بتای پنجم نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۲۵ مهر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+    <div>
+    <a href="2.0.0-beta4/index.html">
+        <img class="img_post" src="2.0.0-beta4/img/index.png">
+        <div><h2 class="h2_post">بتای چهارم نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۸ مهر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+    <div>
+    <a href="2.0.0-beta3/index.html">
+        <img class="img_post" src="2.0.0-beta3/img/index.png">
+        <div><h2 class="h2_post">بتای سوم نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۶ مهر ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+    <div>
+    <a href="2.0.0-beta2/index.html">
+        <img class="img_post" src="2.0.0-beta2/img/index.png">
+        <div><h2 class="h2_post">بتای دوم نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۲۶ شهریور ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+  
+
+  <div>
+    <a href="2.0.0-beta1/index.html">
+        <img class="img_post" src="2.0.0-beta1/img/index.png">
+        <div><h2 class="h2_post">بتای اول نسخۀ دوم آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۲ مرداد ۱۴۰۴ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+
+  <div>
+    <a href="1.0.1/index.html">
+        <img class="img_post" src="1.0.1/img/index.png">
+        <div><h2 class="h2_post">نسخه ۱.۰.۱ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۳۱ شهریور ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+  
+
+  <div>
+    <a href="1.0/index.html">
+        <img class="img_post" src="1.0/img/index.png">
+        <div><h2 class="h2_post">نسخه ۱.۰ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۹ شهریور ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>  
+
+
+  <div>
+    <a href="0.9.2_beta/index.html">
+        <img class="img_post" src="0.9.2_beta/img/index.png">
+        <div><h2 class="h2_post">بتای ۰.۹.۲ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۱۲ مرداد ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>  
+
+
+  <div>
+    <a href="0.9.1.1_beta/index.html">
+        <img class="img_post" src="0.9.1.1_beta/img/index.png">
+        <div><h2 class="h2_post">بتای ۰.۹.۱.۱ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۹ مرداد ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>  
+
+
+  <div>
+    <a href="0.9.1_beta/index.html">
+        <img class="img_post" src="0.9.1_beta/img/index.png">
+        <div><h2 class="h2_post">بتای ۰.۹.۱ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۸ مرداد ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>  
+
+
+  <div>
+    <a href="0.9_beta/index.html">
+        <img class="img_post" src="0.9_beta/img/index.png">
+        <div><h2 class="h2_post">بتای ۰.۹ آراد منتشر شد!</h2></div>
+        <div><p class="p_post">۵ مرداد ۱۴۰۳ • نوشته شده توسط محمد درویشی</p></div>
+    </a>
+  </div>
+
+</body>
+
+
+</html>
