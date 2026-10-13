@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8">
+    <title>downloading... | Arad font</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../icon.svg" type="image/png"/>
+    <meta name="robots" content="nofollow"/>
+    <meta name="language" content="Farsi"/>
+    <meta name="revisit-after" content="7 day"/>
+    <link rel="alternate" hreflang="en-us" href="https://mdarvishi5124.github.io/Arad/docs">
+    <link type="text/css" rel="stylesheet" href="../css/default-style.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="../../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+
+<body>
+
+  <p>Downloading the font, please wait... | If the download didn’t start, click <a href="../Arad_2.5.1.zip">here</a></p>
+
+
+  <a href="../donate/index.html"><h2 class="normal">While you're downloading, please support the Arad font with a donation.</h3></a>
+
+
+</body>
+
+
+</html>

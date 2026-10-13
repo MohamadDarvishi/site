@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Donate | Arad font</title>
+	<meta name="author" content="Mohammad Darvishi">
+	<meta name="description" content="Arad is an open source font, which is a continuation of the Shabnam font project. Arad is designed in 8 weights and three-dots style, and according to the structure and multiple weights, it is suitable for texts and stands out in headlines.">
+	<meta name="robots" content="index, follow"/>
+	<meta name="language" content="English"/>
+	<meta name="revisit-after" content="7 day"/>
+	<link rel="icon" href="icon.svg" type="image/png">
+	<link rel="alternate" hreflang="en-us" href="https://mohamaddarvishi.ir/Arad/">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+
+<body>
+
+  <div>
+  <h2>💚 Support Font Development</h2>
+  <p>This font was created with the goal of expanding public access to free and high-quality Persian type.  
+It is completely free for everyone to use.  
+If this project has been useful to you, or if you’d like to help with its continued development and improvement, you can support me through a voluntary financial contribution.</p>
+  <p>Your support helps me to:</p>
+  <li>Create new styles</li>
+  <li>Add specialized glyphs (math symbols, Quranic letters, and more)</li>
+  <li>Publish better and more complete documentation and usage samples</li>
+  <li>Fix bugs and issues faster and keep the font up to date</li>
+  <li>Dedicate more time to development without financial concerns</li>
+  <li>Prepare special editions of the font</li>
+  <li>And more…</li>
+
+  <p>Your support is completely optional, but it will be a great motivation for me to continue this path.</p>
+  </div>
+
+  <div class="do">
+		<a href="https://daramet.com/mdarvishi5124" class="button button-menu">
+			Daramet (To pay Tomans)
+		</a>
+	</div>
+  <div class="do">
+		<a href="https://donate.sudoshz.ir/u/mdarvishi" class="button button-menu">
+			Yavar (To pay Tomans)
+		</a>
+	</div>
+</div>
+
+    <p>To transfer Bitcoin: bc1q08m99kvdy6q3jyx603g9328s8fwmgyn5jrv6vd</p>
+
+    <p>To transfer Tether(BEP20 - BSC):
+0x7d75b16d06c3c0d404410013d59d228fa8db610d</p>
+
+    <p>Thank you for valuing the freedom of Arabic(Persian) typography.</p>
+
+	</div>
+
+</body>
+</html>

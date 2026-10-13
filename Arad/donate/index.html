@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<title>دونیت | فونت آراد</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="محمد درویشی">
+	<meta name="description" content="آراد یک فونت آزاد هندسی، که ادامۀ پروژۀ فونت شبنم است. آراد در ۱۰ وزن و سه استایل نقطه طراحی شده و با توجه به ساختار و تعدد وزن ها، هم برای متون مناسب است، و هم در تیتر ها خودنمایی می‌کند.">
+	<meta name="robots" content="index, follow"/>
+	<meta name="language" content="Farsi"/>
+	<meta name="revisit-after" content="7 day"/>
+	<link rel="icon" href="icon.svg" type="image/png">
+	<link rel="alternate" hreflang="en-us" href="https://mohamaddarvishi.ir/Arad/">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="../../css/font.css">
+</head>
+
+<div id="header"></div>
+
+<script>
+  fetch("../html/header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+	function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+</script>
+
+
+<body>
+
+  <div>
+  <h2>💚 حمایت از توسعه فونت</h2>
+  <p>این فونت با هدف گسترش دسترسی همگانی به تایپ‌فارسیِ آزاد و باکیفیت ساخته شده و استفاده از آن برای همگان رایگان است.
+اگر این پروژه برای شما مفید بوده یا دوست دارید به ادامه توسعه و بهبود آن کمک کنید، می‌توانید با حمایت مالی داوطلبانه از من پشتیبانی کنید.</p>
+  <p>حمایت شما باعث می‌شود:</p>
+  <li>وزن‌ها و استایل‌های جدید (مانند عریض و...) برای فونت ساخته شود</li>
+  <li>گلیف‌های تخصصی (نمادهای ریاضی، حروف قرآنی و …) اضافه شوند</li>
+  <li>مستندات و نمونه‌های استفاده بهتر و کامل‌تری منتشر شود</li>
+  <li>باگ‌ها و مشکلات زودتر برطرف شوند و فونت برای همیشه بروز بماند</li>
+  <li>طراح بدون نگرانی مالی، زمان بیشتری به توسعه اختصاص دهد</li>
+  <li>نسخه‌های ویژه از فونت آماده شوند</li>
+  <li>و...</li>
+
+  <p>این حمایت کاملاً اختیاری است، اما برای من انگیزه‌ای بزرگ برای ادامه مسیر خواهد بود.</p>
+  </div>
+
+<div style="display:flex;">
+  <div class="do">
+		<a href="https://daramet.com/mdarvishi5124" class="button button-menu">
+			پرداخت تومانی - دارمت
+		</a>
+	</div>
+
+  <div class="do">
+		<a href="https://donate.sudoshz.ir/u/mdarvishi" class="button button-menu">
+			پرداخت تومانی - یاور
+		</a>
+	</div>
+</div>
+
+    <p>برای انتقال بیت‌کوین: bc1q08m99kvdy6q3jyx603g9328s8fwmgyn5jrv6vd</p>
+
+    <p>برای انتقال تتر(BEP20 - BSC):
+0x7d75b16d06c3c0d404410013d59d228fa8db610d</p>
+
+
+    <p>سپاس که به آزادی تایپ فارسی اهمیت می‌دهید</p>
+
+
+</body>
+</html>
